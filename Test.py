@@ -1,7 +1,6 @@
 from pytube import YouTube
-from pytube.cli import on_progress #this module contains the built in progress bar. 
-link=input('enter url:')
-yt=YouTube(link,on_progress_callback=on_progress)
-videos=yt.streams.first()
-videos.download()
-print("(:")
+ 
+link = "https://www.youtube.com/watch?v=jDC5VOvU0As&list=RDjDC5VOvU0As&start_radio=1"
+yt = YouTube(link)
+yt.streams.first().download()
+print("Видео успешно загружено")
