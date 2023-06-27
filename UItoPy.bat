@@ -1,0 +1,1 @@
+.venv\Scripts\pyuic6.exe -x FormTuber.ui -o FormTuber.py
