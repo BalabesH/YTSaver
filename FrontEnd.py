@@ -114,8 +114,9 @@ if __name__ == "__main__":
     ui = Ui_MainWindow()
     ui.setupUi(MainWindow)
     # Create a QPixmap instance with the path to your desired image file
-    pixmap = QPixmap(f"{os.environ['UserProfile']}/OneDrive/Desktop/CodeStudio/ContentSaver/ContentSaver/inbox.png")
-    #C:/Users/Balab/OneDrive/Desktop/CodeStudio/ContentSaver/ContentSaver/inbox.png
+
+    #!!!!!!!!!!!!!!!!!!!CHANGE THE PATH TO YOUR IMAGE FILE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    pixmap = QPixmap(f"{os.environ['UserProfile']}/OneDrive/Documents/GitHub/YTSaver/YTSaver/inbox.png")
     # Convert the QPixmap to a QIcon
     icon = QIcon(pixmap)
     MainWindow.setWindowIcon(icon)
