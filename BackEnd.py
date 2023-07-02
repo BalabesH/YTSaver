@@ -13,7 +13,7 @@ class Downloader(QObject):
         bytes_downloaded = total_size - bytes_remaining
         progress = (bytes_downloaded / total_size) * 100
         self.progress.emit(progress)
-    
+
     def download_video(self, link):
         ytv = YouTube(link, on_progress_callback=self.on_progress)
         #File if path = '/Users/dionysialemonaki/python_project' check_file = os.path.isfile(path)
@@ -27,7 +27,7 @@ class Downloader(QObject):
         yta.streams.filter(only_audio=True).first().download(
                 filename=f'{yta.streams[0].title}.mp3',
                 output_path=afolder)
-        
+
 def check_folder():
         VisExist = os.path.exists(vfolder)
         AisExist = os.path.exists(afolder)
@@ -35,3 +35,5 @@ def check_folder():
             os.mkdir(vfolder)
         elif AisExist == False:
             os.mkdir(afolder)
+
+#chiiil
