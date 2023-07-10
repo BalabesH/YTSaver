@@ -78,7 +78,7 @@ class Ui_MainWindow(object):
 
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
-        MainWindow.setWindowTitle(_translate("MainWindow", "YouTube Saver"))
+        MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
         self.StartButton.setText(_translate("MainWindow", "Download"))
         self.label.setText(_translate("MainWindow", "Insert your link below, check Audio or Video and Download"))
         self.labelURL.setText(_translate("MainWindow", "URL : "))
