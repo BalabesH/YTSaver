@@ -24,7 +24,7 @@ class Downloader(QObject):
         ##name = f'{yta.streams[0].title}.mp3'
         yta = YouTube(link, on_progress_callback=self.on_progress)
         #File if path = '/Users/dionysialemonaki/python_project' check_file = os.path.isfile(path)
-        yta.streams.filter(only_audio=True).first().download(
+        yta.streams.get_audio_only().download(
                 filename=f'{yta.streams[0].title}.mp3',
                 output_path=afolder)
 
