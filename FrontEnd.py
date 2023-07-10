@@ -78,7 +78,7 @@ class Ui_MainWindow(object):
 
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
-        MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
+        MainWindow.setWindowTitle(_translate("MainWindow", "YouTube Saver"))
         self.StartButton.setText(_translate("MainWindow", "Download"))
         self.label.setText(_translate("MainWindow", "Insert your link below, check Audio or Video and Download"))
         self.labelURL.setText(_translate("MainWindow", "URL : "))
@@ -116,7 +116,7 @@ if __name__ == "__main__":
     # Create a QPixmap instance with the path to your desired image file
 
     #!!!!!!!!!!!!!!!!!!!CHANGE THE PATH TO YOUR IMAGE FILE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-    pixmap = QPixmap(f"{os.environ['UserProfile']}/OneDrive/Documents/GitHub/YTSaver/YTSaver/inbox.png")
+    pixmap = QPixmap(f"{os.environ['UserProfile']}/OneDrive/Documents/GitHub/YTSaver/inbox.png")
     # Convert the QPixmap to a QIcon
     icon = QIcon(pixmap)
     MainWindow.setWindowIcon(icon)
